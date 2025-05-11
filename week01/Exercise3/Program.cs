@@ -4,6 +4,47 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Exercise3 Project.");
+        Random random = new Random();
+        int correctNumber = random.Next(1, 101);
+        int guess = 0;
+        int counts = 0;
+        
+        
+        Console.WriteLine("Welcome to the Guess the Number game");
+        Console.Write("A number has been chosen between 1 and 100. Try to guess it!");
+        
+        while (guess != correctNumber)
+        {
+            Console.Write("Guess the number: ");
+            guess = int.Parse(Console.ReadLine());
+
+            if (correctNumber > guess)
+            {
+                Console.WriteLine("Higher");
+                counts +=1;
+            }
+            else if (correctNumber < guess)
+            {
+                Console.WriteLine("Lower");
+                counts +=1;
+            }
+            else
+            {
+                Console.WriteLine("Congratulations, You guessed it!");
+                counts +=1;
+                Console.WriteLine($"You had {counts} guesses");        
+            }
+
+   
+        
+
+
+
+            
+            
+                
+            
+            
+        }
     }
 }
