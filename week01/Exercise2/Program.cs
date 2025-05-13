@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("What was your grade percentage in the maths exams? ");
+        Console.Write("What is your grade percentage? ");
         string gradePercentage = Console.ReadLine();
         int number = int.Parse(gradePercentage);
 
@@ -14,15 +14,15 @@ class Program
         {
             letter = "A";
         }
-        else if (number >= 80 && number <= 89)
+        else if (number >= 80)
         {
             letter = "B";
         }
-        else if (number >= 70 && number <= 79)
+        else if (number >= 70)
         {
             letter = "C";
         }
-        else if (number >= 60 && number <=69)
+        else if (number >= 60)
         {
             letter = "D";
         }
