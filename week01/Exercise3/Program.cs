@@ -28,7 +28,7 @@ class Program
             }
             else
             {
-                Console.WriteLine("Congratulations, You guessed it!");
+                Console.WriteLine("Congratulations, You guessed it!" );
                 counts +=1;
                 Console.WriteLine($"You had {counts} guesses");        
             }   
