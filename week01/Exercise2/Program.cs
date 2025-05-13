@@ -39,7 +39,7 @@ class Program
         }
         else
         {
-             Console.WriteLine("You didnt meet the pass mark, keep working hard and better luck next time");
+             Console.WriteLine("Better luck next time!");
         }
 
 
