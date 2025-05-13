@@ -4,14 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Random random = new Random();
-        int correctNumber = random.Next(1, 101);
-        int guess = 0;
+        Random randomGenerator = new Random();
+        int correctNumber = randomGenerator.Next(1, 101);
+        int guess = -1;
         int counts = 0;
         
-        
-        Console.WriteLine("Welcome to the Guess the Number game");
-        Console.Write("A number has been chosen between 1 and 100. Try to guess it!");
+        Console.WriteLine("A number has been chosen between 1 and 100. Try to guess it!");
         
         while (guess != correctNumber)
         {
@@ -33,17 +31,7 @@ class Program
                 Console.WriteLine("Congratulations, You guessed it!");
                 counts +=1;
                 Console.WriteLine($"You had {counts} guesses");        
-            }
-
-   
-        
-
-
-
-            
-            
-                
-            
+            }   
             
         }
     }
