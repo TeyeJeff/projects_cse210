@@ -5,11 +5,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<int>numbers = new List<int>();
+        List<int> numbers = new List<int>();
+        
         int userNumber = -1;
         while (userNumber != 0)
         {
-            Console.WriteLine("Enter your of number, type 0 to quit");
+            Console.Write("Enter your of number, (type 0 to quit): ");
+            
             string userResponse = Console.ReadLine();
             userNumber = int.Parse(userResponse);
 
@@ -22,11 +24,14 @@ class Program
         int sum = 0;
         foreach (int number in numbers)
         {
-            sum +=number;
+            sum += number;
         }
 
-        Console.WriteLine($"The sume is {sum}");
+        Console.WriteLine($"The sum is {sum}");
 
+        float average = ((float)sum) / numbers.Count;
+        Console.Writeline($"The average is: {average}");
+        
         int max = numbers[0];
 
         foreach (int number in numbers)
@@ -38,10 +43,5 @@ class Program
         }
 
         Console.WriteLine($"The max is {max}");
-        
-        
-        
-        
-
     }
 }
