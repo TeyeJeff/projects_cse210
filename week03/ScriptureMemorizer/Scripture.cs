@@ -39,7 +39,6 @@ public class Scripture
         {
             if (word.IsHidden() == false)
             {
-                Console.WriteLine(word.GetDisplay());
                 return false;
             }
         }
