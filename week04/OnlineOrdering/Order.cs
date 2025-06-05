@@ -37,7 +37,7 @@ public class Order
         StringBuilder label = new StringBuilder("Packing Label:\n");
         foreach (Product product in _products)
         {
-            label.AppendLine($"{product.SetName} (ID): {product.SetProductId} ");
+            label.AppendLine($"{product.GetName()} (ID): {product.GetProductId()} ");
 
         }
         return label.ToString().Trim();
@@ -45,7 +45,7 @@ public class Order
 
     public string GetShippingLabel()
     {
-        return $"Shipping Label: {_customer.SetName} {_customer.GetAddress().GetFullAddress()}";
-    }   
+        return $"Shipping Label: {_customer.GetName()} {_customer.GetAddress().GetFullAddress()}";
+    }
 
 }

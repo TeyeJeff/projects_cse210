@@ -28,6 +28,7 @@ class Program
         video3.AddComment("HaryyHill-c4e", "An incredibly helpful and comprehensive roadmap for aspiring web developers!");
         video3.AddComment("NoahHarris-e6q", "Wow, this explained everything I was strugging with");
         video3.AddComment("the-developer-channel", "Nice video by the way, very useful");
+        videos.Add(video3);
 
 
         foreach (Video video in videos)
@@ -41,7 +42,7 @@ class Program
             {
                 Console.WriteLine($"  - {comment._commentersName}: {comment._commentText}");
             }
-            
+
         }
 
     }
