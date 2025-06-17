@@ -7,7 +7,7 @@ class Program
         while (true)
         {
             Console.Clear();
-            Console.WriteLine("Mindfulness Program Menu");
+            Console.WriteLine("Mindfulness Activities Menu");
             Console.WriteLine("1. Breathing Activity");
             Console.WriteLine("2. Listing Activity");
             Console.WriteLine("3. Reflecting Activity");
@@ -29,7 +29,7 @@ class Program
                     activity = new ReflectingActivity();
                     break;
                 case "4":
-                    Console.WriteLine("Thank you for using the Mindfulness Program!");
+                    Console.WriteLine("Thank you for participating in this exercises.");
                     return;
                 default:
                     Console.WriteLine("Invalid option. Press Enter to try again...");
